@@ -62,4 +62,4 @@
 
 ⭐️ **Base Case:** Function can be solved without using recursion
 
-Note: Recursive call must always be to a cause that makes progress towards base case (to avoid non-terminating recursion)
+Note: Recursive call must always be to a case that makes progress towards base case (to avoid non-terminating recursion)
