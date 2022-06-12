@@ -21,7 +21,41 @@
 
 10. [This Is the World on Machine Learning](#chapter-10-this-is-the-world-on-machine-learning)
 
-## Chapter 1 The Machine-Learning Revolution
+# Chapter 1 The Machine-Learning Revolution
+> A programmer--someone who creates algorithms and codes them up--is a minor god, creating universes at will. 
+
+
+**What is Algorithm?**
+* Sequence of instructions that tells computer what to do
+* Algorithm turn switches (transistors) on and off
+
+  > _What the transistors are doing in response to other transistors are logical reasoning - Claude Shannon (father of information theory)_
+* All algorithms, regardless of the complexity, can be reduced to just these three simple operations: AND, OR, NOT
+
+**The Complexity Devil**
+* **Space complexity**: number of bits of information an algorithm needs to store in computer's memory
+    * An algorithm should not use more memory than a computer can provide
+* **Time complexity**: how long an algorithm takes to run
+    * An algorithm should not run longer than we can afford to wait
+* **Human complexity**: how complicated or intricated an algorithm is for human brain to comprehend
+    * Leads to errors that are hard to be found or fixed
+    * Algorithm might not produce desired result
+    * Hard to be reused or interact well with other algorithms
+
+## Enter the Learner
+
+**What is Machine Learning?**
+It is the inverse of algorithm.
+* Algorithm takes data as input and produces result as output
+* Machine learning takes data and result as input and produces an algorithm as output
+* **Learning algorithm** are algorithms that make other algorithms
+
+    > Learning algorithms are seeds, data is the soil, learned programs are the grown plants. The machine-learning experts is like a farmer, sowing seeds, fertilizing the soil and keep an eye on the health of crop but otherwise staying out of the way.
+
+## Why Bisuness Embrace Machine Learning
+
+
+
 ## Chapter 2 The Master Algorithm
 ## Chapter 3 Hume's Problem of Induction
 ## Chapter 4 How Does Your Brain Learn?
