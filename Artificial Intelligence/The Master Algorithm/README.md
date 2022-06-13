@@ -1,4 +1,8 @@
 # The Master Algorithm by Pedro Domingos
+**Central hypothesis of the book**
+
+_All knowledge - past, present, future - can be derived from data by a single, universal learning algorithm_
+
 ![](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1435790827l/24612233._SY475_.jpg)
 
 1. [The Machine-Learning Revolution](#chapter-1-the-machine-learning-revolution)
@@ -52,11 +56,48 @@ It is the inverse of algorithm.
 
     > Learning algorithms are seeds, data is the soil, learned programs are the grown plants. The machine-learning experts is like a farmer, sowing seeds, fertilizing the soil and keep an eye on the health of crop but otherwise staying out of the way.
 
-## Why Bisuness Embrace Machine Learning
+## Why Business Embrace Machine Learning
+> With Google's annual revenue of $50 billion, every 1 percent improvement in click prediction potentially means another half billion dollars in the bank, every year, for the company. 
 
 
+# Chapter 2 The Master Algorithm
+> Machine learning is simply the same algorithms doing all those different things
 
-## Chapter 2 The Master Algorithm
+**Learning Algorithms**
+* **Naive Bayes**
+    * An algorithm that can be expressed as a single short equation
+    * Given patients' records, able to diagnose condition within second and also used for filtering spams
+
+* **Nearest-Neighbor**
+    * Used for handwriting recognition, controlling robot hands, recommending books or movies
+* **Decision Tree Learner**
+    * Decide if credit-card applications is aceptable, find splice junctions in DNA, choosing next move in game of chess
+
+> If you give learner enough of the appropiate data, it can approximate any functions arbitrarily closely, which is math-speak for learning anything. The catch is that "enough data" could be infinite. 
+
+## Proof of Existence of The Master Algorithm
+* **The argument from Neuroscience**
+    * Experiment done by neuroscientists from MIT, rewiring brain of a ferret, rerouting connections from eyes to auditory cortex (sound processing) and from ears to visual cortex (visual processing). They realised that the auditory cortex learned to see and visual cortex learned to hear.
+    * One popular route towards inventing the Master Algorithm is thus to reverse engineer the brain
+
+* **The argument from Evolution**
+
+    > Evolution is an algorithm. Its input is the experience and fate of all living creatures that ever existed and it has been running for over three billion years on the most powerful computer on Earth: the Earth itself. 
+    * Natural selection is familiar to computer scientists as iterative search - _We try many candidate solutions, selecting and modifying the best ones and repeat the steps as many times as necessary_
+    * Evolution provides us the second route to the Master Algorithm
+
+* **The argument from Physics**
+    * Same equations applied to different quantities describe phenomena in completely different fields. All equations are simple and involve same few derivatives of quantities with respect to space and time - instances of a master equation. All the Master Algorithm needs is to find how how to instantiate those equations for different data sets.
+
+* **The argument from Statistics**
+    * Bayes' theorem is a machine that turns data into knowledge. If Bayesian statisticians are right, either Bayes' theorem is the Master Algorithm or the it's the engine that drives it. 
+
+* **The argument from Computer Science**
+    * **P and NP classes**: A problem is in P if we can solve it efficiently and NP if we can efficiently checks its solution. P = NP is whether every efficiently checkable problem is also efficiently solvable. 
+    * Artificial intelligence consists of finding heuristic solution to NP-complete problems, usually by reducing them to satisfiability. A learner than can learn to solve satisfiability may be the Master Algorithm.
+
+## Machine Learners verses Knowledge Engineers
+
 ## Chapter 3 Hume's Problem of Induction
 ## Chapter 4 How Does Your Brain Learn?
 ## Chapter 5 Evolution: Nature's Learning Algorithm
