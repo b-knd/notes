@@ -96,9 +96,34 @@ It is the inverse of algorithm.
     * **P and NP classes**: A problem is in P if we can solve it efficiently and NP if we can efficiently checks its solution. P = NP is whether every efficiently checkable problem is also efficiently solvable. 
     * Artificial intelligence consists of finding heuristic solution to NP-complete problems, usually by reducing them to satisfiability. A learner than can learn to solve satisfiability may be the Master Algorithm.
 
-## Machine Learners verses Knowledge Engineers
+## The Five Tribes of Machine Learning
+> Each five tribes' solution is brilliant, but the true Master Algorithm must solve them all
+**Symbolists**
+> All intelligence can be reduced to the manipulation of symbols
 
-## Chapter 3 Hume's Problem of Induction
+* Master algorithm: inverse deduction (figuring out missing knowledges and make a deduction go through, make it as general as possible)
+
+**Connectionists**
+> Learning is what brain does so what we need is the reverse engineering of the brain
+
+* Master algorithm: backpropagation (changes connections in layer after layer of neurons to get closer to the desired output)
+
+**Evolutionaries**
+> Mother of all learning is natural selection
+
+* Master algorithm: genetic programming (mating and evolving computer programs in the same way that nature mates and evolves organisms)
+
+**Bayesians**
+> All learned knowledge is uncertain and learning is a form of uncertain inference
+
+* Master algorithm: Bayes' theorem (incorporating new evidence into our beliefs)
+
+**Analogizers**
+> Key to learning is recognizing similarities between situations
+
+* Master algorithm: support vector machine (figuring out which experiences to remember and how to combine them to make new predictions)
+
+# Chapter 3 Hume's Problem of Induction
 ## Chapter 4 How Does Your Brain Learn?
 ## Chapter 5 Evolution: Nature's Learning Algorithm
 ## Chapter 6 In the Church of the Reverend Bayes
