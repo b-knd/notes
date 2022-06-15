@@ -124,7 +124,23 @@ It is the inverse of algorithm.
 * Master algorithm: support vector machine (figuring out which experiences to remember and how to combine them to make new predictions)
 
 # Chapter 3 Hume's Problem of Induction
-## Chapter 4 How Does Your Brain Learn?
+> Rationalists belives that senses deceive and that logical reasoning is the only sure path to knowledge. Empiricists belive that all reasoning is falluble and that knowledge must come from observation and experimentation.
+> Our goal is to figure out the simplest program we can write such that it will continue to write itself by reading data, without limit, until it knows everything there is to know.
+
+## Between Blindness and Hallucination
+> Our beliefs are based on our experience, which gives us a very incomplete picture of the world, and it's easy to jump to false conclusions.
+
+* **Overfitting of data**: when a learner finds a pattern in data that is not actually true in the real world
+* Overfitting happends when there is to many hyoitheses and not enough data to tell them apart
+
+## Accuracy You Can Belive In
+> You don't believe anything a learner tell you until you've verified it on the data that the learner didn't see.
+
+* Data is being divided randomly into training set which is given tot he learner and a test set, which is being hidden from the learner and will then being used to verify the accuracy of the result
+* If a learner fails the test-set accuracy test, then we need to diagnose the problem to see if it's blindness (bias) or hallucination (variance).
+* The learner is probably biased if it keeps on making the same mistakes and it needs to be more flexible. The problem is variance if there's no pattern to the mistakes and we might need to try a less flexible learner or to get more data.
+
+# Chapter 4 How Does Your Brain Learn?
 ## Chapter 5 Evolution: Nature's Learning Algorithm
 ## Chapter 6 In the Church of the Reverend Bayes
 ## Chapter 7 You Are What You Resemble
