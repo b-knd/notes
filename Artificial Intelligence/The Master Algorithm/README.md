@@ -141,6 +141,32 @@ It is the inverse of algorithm.
 * The learner is probably biased if it keeps on making the same mistakes and it needs to be more flexible. The problem is variance if there's no pattern to the mistakes and we might need to try a less flexible learner or to get more data.
 
 # Chapter 4 How Does Your Brain Learn?
+## Symbolist vs Connectionist
+* In symbolist system, concept is being stored in precise location in memory; in connectionist system, concept is stored a little bit everywhere
+* Symbolist learning is sequential (figure out one step at a time), connectionist learning is parallel (simultaneous learning)
+
+## The rise and fall of perceptron
+**First Formal Model of Neuron (by Warren McCulloch and Walter Pitts)**
+* Resemble logic gates, neuron switches on when number of active inputs passes some threshold
+* Threshold = 1 resemble an OR gate, whereas any other threshold resemble an AND gate, there is also neuron that prevent other from swirching on, acting like inhibitory synapses, thus resembling a NOT gate
+* Conclusion: this model cannot learn (need variable weights to connection between neurons)
+
+**Perceptrons (by Frank Rosenblatt)**
+> Errors drives the learnind
+* Weight implemented using variable resistors, learning carried out by electric motors that turned knobs on resistors
+* By varying weights and thresholds, we can change function that perceptron computes --a general-purpose learning algorithm
+* In the learning process, for example to recognize your grandmother, if perceptron fails to fire at correct picture, weights of the inputs need to be increased (weight of correct features, eg. brown eyes). If it fires when it shouldn't, weight of active inputs are being decreased. Once the perceptron fires upon seeing grandmother's pictures all the time, learning is complete.
+* Fail to be a model for Master Algorithm, claimed Marvin Minsky, revealing failure of perceptrons to learn XOR function
+
+## Physicist makes brain out of glass
+* John Hopfield (physicist) noticed analogy between brain and spin glasses (magnetic, glass-like materieals)
+* Unrealistic model for some reasons:
+    * Electrons' spin interactions are symmetric but connection between neurons are not
+    * Real neurons are statistical as they do not turn on and off by inputs, just more likely but not certain.
+* David Ackley, Geoff Hinton and Trry Sejnowski replaced deterministic neurons in Hopfield's networds with probabilistic ones with probability of finding network in a particular state as a Boltzmann distribution
+* This is known as Boltzmann machine, it learns by being alternately awake and asleep, then comparing statistics of states during 'dream' and yesterday's activities to change connection weights to match each other.
+
+
 ## Chapter 5 Evolution: Nature's Learning Algorithm
 ## Chapter 6 In the Church of the Reverend Bayes
 ## Chapter 7 You Are What You Resemble
