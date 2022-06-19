@@ -166,8 +166,33 @@ It is the inverse of algorithm.
 * David Ackley, Geoff Hinton and Trry Sejnowski replaced deterministic neurons in Hopfield's networds with probabilistic ones with probability of finding network in a particular state as a Boltzmann distribution
 * This is known as Boltzmann machine, it learns by being alternately awake and asleep, then comparing statistics of states during 'dream' and yesterday's activities to change connection weights to match each other.
 
+## Climbing Mountains is Hyperspace
+**Perceptron Algorithm vs Backpropagation Algorithm**
+* Perception algorithm's signal is all or none (either right or wrong), in backpropagation, neuron adjusts weight accordingly based on returning signal and input after comparing output with desired output, gradually converging to value that allow it to discriminate between what is right and what is wrong
+**Backpropagation**
+* Backprop (find the steepest slope you can find): gradient ascent and gradient descent
+* Problem: local minimum problem (In situation to find lowest point, we might arrive at a local minimum instead of a global minimum using backprop)
+**Hyperspace: The Double-edged Sword**
+* The higher the dimension, more room it has for highly convoluted surfaces and local optima
+* But to be stuck in local optimum, it has to be stuck in every dimension which is unlikely to be
 
-## Chapter 5 Evolution: Nature's Learning Algorithm
+## The Perceptron's Revenge
+* Trained to read aloud by Terry Sejnowski and Charles Rosenberg
+* Predicting stock market (ability to detect small nonlinearities in noisy data)
+* Learned to drive a car (by detecting road in video images and turning steering wheel)
+
+## Deeper into the Brain
+> We need higher-level comcepts to make sense of the morass of low-level details, weeding out the ones that are specific to wetware or just quirks of evolution. We don't build airplanes by reverse engineering feathers, and airplanes don't flap their wings. Rather, airplane designs are based on the principles of aerodynamics, which all flying objects must obey. We still do not understand those analogous principles of thought.
+* Backprop broke down when more and more layers being added
+
+# Chapter 5 Evolution: Nature's Learning Algorithm
+**Darwin's Algorithm**
+* The key input to a genetic algorithm, is a fitness function (assign programs numeric score reflecting how well a program fits the purpose)
+* The real power of genetic algorithms lay in 'sex' by mimicking the process of reproduction where mating between fittest individuals occurs, process repeat and selection continues until a desired fitness is reached or time runs out.
+* As oppose to real natural selection, the algorithm is 'immortal' in some sense, where a highly fit individual can reproduce with other generations besides its own
+* Graph of fitness against time looks like an uneven staircase with sudden improvements followed by a flat period that increases over time
+
+
 ## Chapter 6 In the Church of the Reverend Bayes
 ## Chapter 7 You Are What You Resemble
 ## Chapter 8 Learning Without a Teacher
