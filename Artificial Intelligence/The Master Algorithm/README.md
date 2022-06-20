@@ -166,7 +166,7 @@ It is the inverse of algorithm.
 * David Ackley, Geoff Hinton and Trry Sejnowski replaced deterministic neurons in Hopfield's networds with probabilistic ones with probability of finding network in a particular state as a Boltzmann distribution
 * This is known as Boltzmann machine, it learns by being alternately awake and asleep, then comparing statistics of states during 'dream' and yesterday's activities to change connection weights to match each other.
 
-## Climbing Mountains is Hyperspace
+## Climbing Mountains in Hyperspace
 **Perceptron Algorithm vs Backpropagation Algorithm**
 * Perception algorithm's signal is all or none (either right or wrong), in backpropagation, neuron adjusts weight accordingly based on returning signal and input after comparing output with desired output, gradually converging to value that allow it to discriminate between what is right and what is wrong
 **Backpropagation**
@@ -192,8 +192,25 @@ It is the inverse of algorithm.
 * As oppose to real natural selection, the algorithm is 'immortal' in some sense, where a highly fit individual can reproduce with other generations besides its own
 * Graph of fitness against time looks like an uneven staircase with sudden improvements followed by a flat period that increases over time
 
+## The Exploration-Exploitation Dilemma
+**Genetic Algorithms vs Multilayer Perceptrons**
+* **Backprop** only entertains one hypothesis at a time, the hypothesis changes gradually until it settles into a local optimum. **Genetic algorithms** consider entire population of hypotheses, and with good crossover, can take a leap from one generation to next.
+* **Backprop** proceeds deterministically after setting a random initial weigth value. **Genetic algorithm** takes random choices (crossing over).
+* **Backprop** leans weights for predefined network architecture. **Genetic algorithm** make no a priori assumptions about structures to learn, other than the general form.
 
-## Chapter 6 In the Church of the Reverend Bayes
+**Exploration-Exploitation Dilemma**
+> If you've found something that works, should you just keep doing it? Or is it better to try new things, knowing it could be a waste of time but also might lead to a better solution?
+
+## Nurturing nature
+* Evolutionaries focus on learning structure; connectionists prefer to take simple, hand-coded structure with lots of connections and let weight learning do the work
+* The Master ALgorithm is neither genetic programming not backprop, but has to include the key elements of both: structure learning and weight learning
+* In reality, nature does not come before nurture, but alternate, with each round of "nurture" learning setting the stage for next round of "nature" learning
+
+## He who learns fastest win
+* **Nature** for a computer is the program it runs, **nurture** is the data it gets
+* Symbolists and Bayesians claimed that figuring out how we should learn can help us to understand how we do learn
+
+# Chapter 6 In the Church of the Reverend Bayes
 ## Chapter 7 You Are What You Resemble
 ## Chapter 8 Learning Without a Teacher
 ## Chapter 9 The Pieces of the Puzzle Fall into Place
