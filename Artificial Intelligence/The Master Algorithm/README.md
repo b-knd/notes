@@ -211,6 +211,27 @@ It is the inverse of algorithm.
 * Symbolists and Bayesians claimed that figuring out how we should learn can help us to understand how we do learn
 
 # Chapter 6 In the Church of the Reverend Bayes
+## The Theorem that Runs the World
+* We think of Bayes' theorem in terms of cause and effect, the more likely the effect is given the cause, the more likely the cause is given the effect
+* P(cause | effect) = P(cause) x P(effect | cause) / P(effect)
+
+## All models are wrong, but some are useful - George Box
+* A learner that uses Bayes' theorem and assumes the effects are independent given the cause is called a Naive Bayes classifier
+* Naive Bayes forms the basis of spam filters. There's no need to understand the details of message, but to see which words it contains to identify a spam (Mehran Sahami). 
+* Naive Bayes is, in some way, similar to perceptron algorithm where perceptrons adds weights and Naive Bayes multiples probabilities
+
+## From Eugene Onegin to Siri
+* In 1913, Andrei Markov (Russian mathematician) modeled Pushkin's Eugene Onegin (Russian literature) using a Markov chain
+* He lets probability of each letter depend on letter immediately preceding it, if the ith letter of Eugene Onegin is consonant then false, otherwise true. Then this is being represented with a chain-like graph with arrow between two nodes indicating direct dependency between variables.
+* PageRank, algorithm that gave rise to Google is a Markov chain. Page's score is the fraction of time surfer spends on it or probability of him landing on the page. The markov chain is then represented as a graph of chain-like structure with arrows between webpages.
+
+**Hidden Markov Model (HMM) - heart of speech-recognition systems**
+* Hidden states are written words, observations are sounds spoken to Siri, goal is to infer into words from sounds
+* Two components of the model: probability of the next words given current one, and probability of hearing various sounds given the word being pronounced.
+
+## Everything is connected, but not directly
+
+
 ## Chapter 7 You Are What You Resemble
 ## Chapter 8 Learning Without a Teacher
 ## Chapter 9 The Pieces of the Puzzle Fall into Place
