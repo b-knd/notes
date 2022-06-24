@@ -230,7 +230,16 @@ It is the inverse of algorithm.
 * Two components of the model: probability of the next words given current one, and probability of hearing various sounds given the word being pronounced.
 
 ## Everything is connected, but not directly
+**Bayesian Network by Judea Pearl**
+* A graph of dependencies, together with a table for each variable, containing probability for each combination of values of its parents.
+* To obtain the probability of a complete state, just multiply the probilities from corresponding lines in individual variables' tables
+* Application includes: modelling how genes regulate each other in living cells. David Heckerman used it in fight against AIDS to identify regions of virus protein that can't change without hurting the virus and developed a vaccine delivery mechanism that could teach immune system to attack those regions.
 
+## The Inference Problem
+> Bayesian network does not give full table, we have to construct from individual tables which takes exponential time and space
+
+* One solution is to pretend graph has no loops and keep propagating probabilities back and forth until they converge (works well in many cases)
+* Another is MCMC (Markov chain Monte Carlo)
 
 ## Chapter 7 You Are What You Resemble
 ## Chapter 8 Learning Without a Teacher
