@@ -6,7 +6,7 @@
 ![](maths_for_ml.jpg)
 ***
 
-[**Part I Mathematical Foundations**](#part-1-mathematical-foundations)
+**Part I Mathematical Foundations**
 
 1. [Introduction and Motivation](#chapter-1-introduction-and-motivation)
 2. [Linear Algebra](#chapter-2-linear-algebra)
@@ -16,7 +16,7 @@
 6. [Probability and Distribution](#chapter-6-probability-and-distribution)
 7. [Continuous Optimization](#chapter-7-continuous-optimization)
 
-[**Part II Central Machine Learning Problem**](#part-2-central-machine-learning-problem)
+**Part II Central Machine Learning Problem**
 
 8. [When Models Meet Data](#chapter-8-when-models-meet-data)
 9. [Linear Regression](#chapter-9-linear-regression)
