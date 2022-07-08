@@ -47,6 +47,43 @@
 - Learning is carried out from available data through numerical optimization methods (Model should also works well on unseen data)
 
 ## Chapter 2 Linear Algebra
+> **Linear algebra is the study of vectors and certain rules to manipulate vectors**
+
+### Chapter 2.1 Systems of Linear Equations
+* For real-valued system of linear equations, there is either no solution, exactly one solution (unique solution) or infinitely many solution (usually having a free variable in solution)
+* For system of equations with 2 variables, each equations can be represented as lines on a 2D plane. Solution is the intersection between those lines.
+* For system of equations with 3 variables, each equations determines a plane in a 3D space and again, solution is the common intersection between those planes.
+* To solve systematically, we collect coefficients into vectors and collect vectors into matrices
+  
+  Original equation: 
+  
+  $$
+  \displaylines{a_11x_1 + \cdots + a_{1n}x_n = b_1 \\
+  \vdots\space, \\
+  a_m1x_1 + \cdots + a_{mn}x_n = b_m}
+  $$
+  
+  Can be converted into: 
+  
+  $$
+  x_1 \begin{bmatrix}a_11 \\ 
+  \vdots \\ 
+  a_m1\end{bmatrix} + x_2 \begin{bmatrix}a_12 \\ 
+  \vdots \\ 
+  a_m2\end{bmatrix} + \cdots + x_n \begin{bmatrix}a_1n \\ 
+  \vdots \\ 
+  a_mn\end{bmatrix} = \begin{bmatrix}b_1 \\ 
+  \vdots \\ 
+  b_m\end{bmatrix} \Longleftrightarrow \begin{bmatrix}a_11 & \cdots & a_1n \\ 
+  \vdots & \space & \vdots \\ 
+  a_m1 & \cdots & a_mn\end{bmatrix} \begin{bmatrix}x_1 \\ 
+  \vdots \\ 
+  x_n\end{bmatrix} = \begin{bmatrix}b_1 \\ 
+  \vdots \\ 
+  b_m\end{bmatrix}
+  $$
+
+### Chapter 2.2 Matrices
 
 ## Chapter 3 Analytic Geometry
 ## Chapter 4 Matrix Decomposition
