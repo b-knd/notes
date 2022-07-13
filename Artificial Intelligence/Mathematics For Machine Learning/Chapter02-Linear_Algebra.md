@@ -75,6 +75,55 @@ Multiplication is only applicable for matrices with matching dimension, e.g. n x
 ### Chapter 2.2.2 Inverse and Transpose
 > **Definition** (Inverse). A square matrix $\mathbf{A}\in\mathbb{R}^{n\times n}$. Let matrix $\mathbf{B}\in\mathbb{R}^{n\times n}$ have the property that $\mathbf{A}\mathbf{B} = \mathbf{I}_n = \mathbf{B}\mathbf{A}. \mathbf{B}$ is called the inverse of $\mathbf{A}$ and denoted by $\mathbf{A}^{-1}$.
 - Matrix without inverse is known as regular/invertible/nonsingular matrix
-- We can use determinant to check if a matrix is invertible
+- We can use determinant to check if a matrix is invertible, e.g.
+
+  $$\mathbf{A}\coloneqq \begin{bmatrix}a_{11} & a_{12}\\ 
+  a_{21} & a_{22}\end{bmatrix} \in \mathbb{R}^{2\times 2}$$ 
+  
+  has an inverse because its determinant $a_{11}a_{22} - a_{12}a_{21} \neq 0$
+- If multiplication between two matrices is an inverse matrix, then the two matrices are said to be the inverse of each other
+
+> **Definition** (Transpose). For $\mathbf{A}\in\mathbb{R}^{m\times n}$ the matrix $\mathbf{B}\in\mathbb{R}^{n\times m}$ with $b_{ij}=a_{ji}$ is called the transpose of $\mathbf{A}$. We write $B = A^\top$ (Tips: just write columns of A as rows to get the transpose of A)
+
+**Properties of inverses and transposes**
+
+$$\mathbf{A}\mathbf{A}^{-1} = \mathbf{I} = \mathbf{A}^{-1}\mathbf{A}$$
+
+$$(\mathbf{A}\mathbf{B})^{-1} = \mathbf{B}^{-1}\mathbf{A}^{-1}$$
+
+$$(\mathbf{A}+\mathbf{B})^{-1} \neq \mathbf{A}^{-1} + \mathbf{B}^{-1}$$
+
+$$(\mathbf{A}^\top)^\top = \mathbf{A}$$
+
+$$(\mathbf{A} +\mathbf{B})^\top = \mathbf{A}^\top + \mathbf{B}^\top$$
+
+$$(\mathbf{A}\mathbf{B})^\top = \mathbf{B}^\top\mathbf{A}^\top$$
+
+> **Definition** (Symmetric Matrix). A matrix $\mathbf{A}\in\mathbb{R}^{n\times n}$ is symmetric if $\mathbf{A} = \mathbf{A}^\top$, only (n, n)-matrices can be symmetric.
+
+- If matrix A is invertible, so does its transpose
+- Sum of symmetric matrices is always symmetric but not neccessarily so for their product
+
+### Chapter 2.2.3 Multiplication by a Scalar
+- Let $\mathbf{A}\in\mathbb{R}^{m\times n}$ and $\lambda\in\mathbb{R}$. Then $\lambda\mathbf{A} = \mathbf{K}$, $K_{ij} = \lambda a_{ij}$
+- Multiplication is associative and distributive
+- Transpose of a scalar is the scalar itself
+
+### Chapter 2.2.4 Compact Representations of Systems of Linear Equations
+Given system of linear equations
+$$2x_1 + 3x_2 + 5x_3 = 1$$
+$$4x_1 - 2x_2 - 7x_3 = 8$$
+$$9x_1 + 5x_2 - 3x_3 = 2$$
+
+Compact representation
+
+$$\begin{bmatrix}2 & 3 & 5 \\ 
+4 & -2 & -7 \\ 
+9 & 5 & -3\end{bmatrix} \begin{bmatrix}x_1 \\
+x_2 \\
+x_3\end{bmatrix} = \begin{bmatrix}1 \\
+8 \\ 
+2\end{bmatrix}$$
 
 
+## Chapter 2.3 Solving Systems of Linear Equations
