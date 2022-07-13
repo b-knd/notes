@@ -59,6 +59,22 @@ $$c_{ij} = \sum_{l=1}^{n} a_{il}b_{lj}, \space\space\space i = 1,...,m, j = 1,..
 
 Multiplication is only applicable for matrices with matching dimension, e.g. n x k-matrix **_A_** can be multiplied with a k x m-matrix **_B_**, producing a n x m-matrix **_C_**, but product BA is not defined if m $\neq$ n
 
-> **Definition** (Identity Matrix).
+> **Definition** (Identity Matrix). An n x n matrix that contains 1 on diagonal and 0 everywhere else.
+>> $$\mathbf{I}_n \coloneqq \begin{bmatrix}1 & 0 & \cdots & 0 & \cdots & 0 \\ 
+  0 & 1 & \cdots & 0 & \cdots & 0 \\
+  \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+  0 & 0 & \cdots & 1 & \cdots & 0 \\
+  \vdots & \vdots & \ddots & \vdots & \ddots & \vdots \\
+   0 & 0 & \cdots & 0 & \cdots & 1\end{bmatrix} \in \mathbb{R}^{n\times n}$$
+   
+**Properties of Matrices**
+- Associativity: $\forall\mathbf{A}\in\mathbb{R}^{m\times n}, \mathbf{B}\in\mathbb{R}^{n\times p}, \mathbf{C}\in\mathbb{R}^{p\times q}:(\mathbf{A}\mathbf{B})\mathbf{C} = \mathbf{A}(\mathbf{B}\mathbf{C})$
+- Distributivity: $\forall\mathbf{A}, \mathbf{B}\in\mathbb{R}^{m\times n}, \mathbf{C}, \mathbf{D}\in\mathbb{R}^{n\times p}:(\mathbf{A}+\mathbf{B})\mathbf{C} = \mathbf{A}\mathbf{C}+\mathbf{B}\mathbf{C}, \mathbf{A}(\mathbf{C}\mathbf{D}) = \mathbf{A}\mathbf{C}+\mathbf{A}\mathbf{D}$
+- Multiplication with the identity matrix: $\forall\mathbf{A}\in\mathbb{R}^{m\times n}: \mathbf{I}_m\mathbf{A} = \mathbf{A}\mathbf{I}_n = \mathbf{A}$
+
+### Chapter 2.2.2 Inverse and Transpose
+> **Definition** (Inverse). A square matrix $\mathbf{A}\in\mathbb{R}^{n\times n}$. Let matrix $\mathbf{B}\in\mathbb{R}^{n\times n}$ have the property that $\mathbf{A}\mathbf{B} = \mathbf{I}_n = \mathbf{B}\mathbf{A}. \mathbf{B}$ is called the inverse of $\mathbf{A}$ and denoted by $\mathbf{A}^{-1}$.
+- Matrix without inverse is known as regular/invertible/nonsingular matrix
+- We can use determinant to check if a matrix is invertible
 
 
