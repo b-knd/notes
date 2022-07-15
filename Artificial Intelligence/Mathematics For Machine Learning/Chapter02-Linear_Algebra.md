@@ -127,3 +127,73 @@ x_3\end{bmatrix} = \begin{bmatrix}1 \\
 
 
 ## Chapter 2.3 Solving Systems of Linear Equations
+### Chapter 2.3.1 Particular and General Solution
+**Overall steps**
+1. Find a particular solution to $\mathbf{Ax} = \mathbf{b}.$
+2. Find all solutions to $\mathbf{Ax} = \mathbf{0}.$
+3. Combine solutions from step 1. and 2. to the general solution
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;**Example**
+
+$$
+\begin{bmatrix}1 & 0 & 8 & -4 \\
+0 & 1 & 2 & 12 \end{bmatrix} \begin{bmatrix}x_1 \\
+x_2 \\
+x_3 \\
+x_4 \end{bmatrix} = \begin{bmatrix}42 \\
+8 \end{bmatrix}
+$$
+
+Our goal is to find scalars $x_1, ...,x_4$ such that $$\sum _{i=1} ^{4} x_1\mathbf{c}_i = \mathbf{b}$$ where $\mathbf{c}_i$ is the ith column of matrix and **b** is the right hand side of the given equation 
+
+The first solution can be found by taking 42 times first column and 8 times second column such that
+
+$$\mathbf{b} = \begin{bmatrix}42 \\
+8 \end{bmatrix} = 42 \begin{bmatrix}1 \\
+0 \end{bmatrix} + 8 \begin{bmatrix}0 \\
+1 \end{bmatrix}
+$$
+
+**Particular solution/ special solution:** $\lbrack 42,8,0,0\rbrack^\top$
+
+Particular solution is not the only solution, to capture all possible solution we need to generate $\mathbf{0}$ using columns of matrix.
+
+Taking third column:
+
+$$\mathbf{b} = \begin{bmatrix}8 \\
+2 \end{bmatrix} = 8 \begin{bmatrix}1 \\
+0 \end{bmatrix} + 2 \begin{bmatrix}0 \\
+1 \end{bmatrix}
+$$
+
+So $\mathbf{0} = 8c_1 + 2c_1 - c_3 + 0c_4$ and $(x_1,x_2,x_3,x_4) = (8,2,-1,0)$
+
+Taking fourth column:
+
+$$\mathbf{b} = \begin{bmatrix}-4 \\
+12 \end{bmatrix} = -4 \begin{bmatrix}1 \\
+0 \end{bmatrix} + 12 \begin{bmatrix}0 \\
+1 \end{bmatrix}
+$$
+
+So $\mathbf{0} = -4c_1 + 12c_1 + 0c_3 - c_4$ and $(x_1,x_2,x_3,x_4) = (-4,12,0,-1)$
+
+**General solution:** 
+
+$$\begin{cases}\begin{rcases}\mathbf{x}\in\mathbb{R}^4:\mathbf{x} = \begin{bmatrix}42 \\
+8 \\
+0 \\
+0 \end{bmatrix} + \lambda _1 \begin{bmatrix}8 \\
+2 \\
+-1 \\
+0 \end{bmatrix} + \lambda _2 \begin{bmatrix}-4 \\
+12 \\
+0 \\
+-1 \end{bmatrix}, \lambda _1,\lambda _2 \in \mathbb{R}\end{rcases}\end{cases}
+$$
+
+### Chapter 2.3.2 Elementary Transformations
+**Elementary transformations**
+- Exchange of two equatons
+- Multiplication of an equation with a constant $\lambda\in\mathbb{R}\setminus\lbrace 0\rbrace$
+
