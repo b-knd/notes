@@ -133,7 +133,7 @@ x_3\end{bmatrix} = \begin{bmatrix}1 \\
 2. Find all solutions to $\mathbf{Ax} = \mathbf{0}.$
 3. Combine solutions from step 1. and 2. to the general solution
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;**Example**
+**Example**
 
 $$
 \begin{bmatrix}1 & 0 & 8 & -4 \\
