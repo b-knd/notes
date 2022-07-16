@@ -196,4 +196,122 @@ $$
 **Elementary transformations**
 - Exchange of two equatons
 - Multiplication of an equation with a constant $\lambda\in\mathbb{R}\setminus\lbrace 0\rbrace$
+- Addition of two equations (rows)
+
+**Example**
+System of equations:
+
+$$\displaylines{-2x_1 + 4x_2-2x_3-x_4+4x_5=-3 \\
+4x_1-8x_2+3x_3-3x_4+x_5=2 \\
+x_1-2x_2+x_3-x_4+x_5=0 \\
+x_1-2x_2-3x_4+4x_5=a}$$
+
+Compact matrix notation $\mathbf{Ax} = \mathbf{b}$
+
+$$\displaylines{
+  \left[\begin{array}{rrrrr|r}
+    -2 & 4 & -2 & -1 & 4 & -3\\
+    4 & -8 & 3 & -3 & 1 & 2 \\
+    1 & -2 & 1 & -1 & 1 & 0 \\
+    1 & -2 & 0 & -3 & 4 & a
+  \end{array}\right] \\
+  \\
+  \textrm{Swapping row 1 and 3} \\
+  \rightsquigarrow \left[\begin{array}{rrrrr|r}
+    1 & -2 & 1 & -1 & 1 & 0 \\
+    4 & -8 & 3 & -3 & 1 & 2 \\
+    -2 & 4 & -2 & -1 & 4 & -3 \\
+    1 & -2 & 0 & -3 & 4 & a
+  \end{array}\right] \\
+  \\
+  R_2 \leftarrow R_2-4R_1, R_3 \leftarrow R_3+2R_1, R_4 \leftarrow R_4-R_1 \\
+  \rightsquigarrow \left[\begin{array}{rrrrr|r}
+    1 & -2 & 1 & -1 & 1 & 0 \\
+    0 & 0 & -1 & 1 & -3 & 2 \\
+    0 & 0 & 0 & -3 & 6 & -3 \\
+    0 & 0 & -1 & -2 & 3 & a
+  \end{array}\right] \\
+  \\
+  R_4 \leftarrow R_4-R_2-R_3 \\
+  \rightsquigarrow \left[\begin{array}{rrrrr|r}
+    1 & -2 & 1 & -1 & 1 & 0 \\
+    0 & 0 & -1 & 1 & -3 & 2 \\
+    0 & 0 & 0 & -3 & 6 & -3 \\
+    0 & 0 & 0 & 0 & 0 & a+1
+  \end{array}\right] \\
+  \\
+  R_2 \leftarrow -R_2, R_3 \leftarrow R_3 \cdot (-\frac{1}{3}) \\
+  \rightsquigarrow \left[\begin{array}{rrrrr|r}
+    1 & -2 & 1 & -1 & 1 & 0 \\
+    0 & 0 & 1 & -1 & 3 & -2 \\
+    0 & 0 & 0 & 1 & -2 & 1 \\
+    0 & 0 & 0 & 0 & 0 & a+1
+  \end{array}\right] \\
+}$$
+
+The matrix is now in row-echelon form (RFF). Changing back to explicit notation:
+> **Definition** (Row-Echelon From). All rows contain only zeros are at bottom of matrix and all rows with at least one nonzero element are on top of rows that contain only zeros. For nonzero rows, first nonzero number from left (pivot/leading coefficient) is always strictly to the right of the pivot of row above.
+
+$$\displaylines{x_1 -2x_2+x_3-x_4+x_5=0 \\
+x_3-x_4+3x_5=-2 \\
+x_4-2x_5=1 \\
+0=a+1}$$
+
+Only for $a=-1$ the system has solution. Pivot element (basic variables) are $x_1, x_3, x_4$, free variables are $x_2, x_5$.
+
+**Particular solution**: (coefficient of free variables are set to 0) $\lbrack 2, 0,-1,1,0\rbrack^\top$
+
+Using the same row-echelon form, set b to 0 such that 
+
+$$
+ \rightsquigarrow \left[\begin{array}{rrrrr|r}
+    1 & -2 & 1 & -1 & 1 & 0 \\
+    0 & 0 & 1 & -1 & 3 & 0 \\
+    0 & 0 & 0 & 1 & -2 & 0 \\
+    0 & 0 & 0 & 0 & 0 & 0
+  \end{array}\right]
+$$
+
+Then rewrite it in notation form
+
+$$\displaylines{x_1 -2x_2+x_3-x_4+x_5=0 \\
+x_3-x_4+3x_5=0 \\
+x_4-2x_5=0 \\
+\\
+x_1=2x_2+x_3+x_4-x_5 \\
+x_3=x_4-3x_5 \\
+x_4=2x_5 \\
+\\
+\begin{bmatrix}2x_2+x_3+x_4-x_5 \\
+x_2 \\
+x_4-3x_5 \\
+2x_5 \\
+x_5 \end{bmatrix} = x_2 \begin{bmatrix}2 \\
+1 \\
+0 \\
+0 \\
+0\end{bmatrix} + x_5 \begin{bmatrix}2 \\
+0 \\
+-1 \\
+2 \\
+1\end{bmatrix}
+}$$
+
+**General solution** (capturing all possible solution): 
+
+$$\begin{cases}\begin{rcases}\mathbf{x}\in\mathbb{R}^5:\mathbf{x} = \begin{bmatrix}2 \\
+0 \\
+-1 \\
+1 \\
+0\end{bmatrix} + \lambda _1 \begin{bmatrix}2 \\
+1 \\
+0 \\
+0 \\
+0\end{bmatrix} + \lambda _2 \begin{bmatrix}2 \\
+0 \\
+-1 \\
+2 \\
+1\end{bmatrix}, \lambda _1,\lambda _2 \in \mathbb{R}\end{rcases}\end{cases}
+$$
+
 
