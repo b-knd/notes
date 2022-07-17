@@ -314,4 +314,30 @@ $$\begin{cases}\begin{rcases}\mathbf{x}\in\mathbb{R}^5:\mathbf{x} = \begin{bmatr
 1\end{bmatrix}, \lambda _1,\lambda _2 \in \mathbb{R}\end{rcases}\end{cases}
 $$
 
+> _Remark_ (Reduced row-echelon form). An equation that is in row-echelon form, every pivot is 1 and pivot are the only nonzero entry in its column.
+> _Remark_ (Gaussian Elimination). An algorithm that perform elementary transformations to change system of linear equations into reduced row-echolon form.
 
+**Example**
+
+$$
+\begin{bmatrix}\mathbf{1} & 3 & 0 & 0 & 3 \\
+0 & 0 & \mathbf{1} & 0 & 9 \\
+0 & 0 & 0 & \mathbf{1} & -4 \end{bmatrix}
+$$
+
+To find a solution of &\mathbf{Ax} = \mathbf{0}$, look at non-pivot columns and try to obtain 0.
+
+Non-pivot column: second and fifth column. Second column is 3 times the first column, to obtain 0, subtract second from three times the first column. Fifth column is 3 times the first column, 9 times the second pivot column and -4 times the third pivot column, then we subtract fifth column to obtain 0.
+
+**Solution:**
+
+$$\begin{cases}\begin{rcases}\mathbf{x}\in\mathbb{R}^5:\mathbf{x} = \lambda _1 \begin{bmatrix}3 \\
+-1 \\
+0 \\
+0 \\
+0\end{bmatrix} + \lambda _2 \begin{bmatrix}3 \\
+0 \\
+9 \\
+-4 \\
+-1\end{bmatrix}, \lambda _1,\lambda _2 \in \mathbb{R}\end{rcases}\end{cases}
+$$
