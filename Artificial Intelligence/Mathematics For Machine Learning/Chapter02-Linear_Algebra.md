@@ -341,3 +341,52 @@ $$\begin{cases}\begin{rcases}\mathbf{x}\in\mathbb{R}^5:\mathbf{x} = \lambda _1 \
 -4 \\
 -1\end{bmatrix}, \lambda _1,\lambda _2 \in \mathbb{R}\end{rcases}\end{cases}
 $$
+
+### Chapter 2.3.3 The Minus-1 Trick
+**Minus-1 Trick**
+A practical trick to read out solution of a homogeneous system of linear equations $\mathbf{Ax}=\mathbf{0}$, where $\mathbf{A}\in\mathbb{R}^{k\times n},\mathbf{x}\in\mathbb{R}^n.$
+1. Assuming a matrix A is in reduced row-echelon form
+2. We extend matrix to an n x n matrix by adding n-k rows of the form $\begin{bmatrix} 0 & \cdots & 0 & -1 & 0 & \cdots & 0\end{bmatrix}$ so that the diagonal of the new matrix contains either 1 or -1
+3. Then the solutions are simply the columns that contain -1 as pivots
+
+**Example**
+
+$$
+\begin{bmatrix}1 & 3 & 0 & 0 & 3 \\
+0 & 0 & 1 & 0 & 9 \\
+0 & 0 & 0 & 1 & -4 \end{bmatrix}
+$$
+
+We extend the matrix to a 5 x 5 matrix by adding rows
+
+$$
+\begin{bmatrix}1 & 3 & 0 & 0 & 3 \\
+0 & -1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 & 9 \\
+0 & 0 & 0 & 1 & -4 \\
+0 & 0 & 0 & 0 & -1 \end{bmatrix}
+$$
+
+**Solution:**
+
+$$\begin{cases}\begin{rcases}\mathbf{x}\in\mathbb{R}^5:\mathbf{x} = \lambda _1 \begin{bmatrix}3 \\
+-1 \\
+0 \\
+0 \\
+0\end{bmatrix} + \lambda _2 \begin{bmatrix}3 \\
+0 \\
+9 \\
+-4 \\
+-1\end{bmatrix}, \lambda _1,\lambda _2 \in \mathbb{R}\end{rcases}\end{cases}
+$$
+
+**Calculating the inverse**
+Find matrix $\mathbf{X}$ that satisfies $\mathbf{AX}=\mathbf{I}_n$. 
+We use augmented matrix for compact representation and obtain
+
+$$\lbrack \mathbf{A} | \mathbf{I}_n\rbrack \rightsquigarrow \cdots \rightsquigarrow \lbrack \mathbf{I}_n | \mathbf{A}^{-1}\rbrack$$
+
+### Chapter 2.3.4 ALgorithms for Solving a System of Linear Equations
+- If there is no solution to a system of linear equations, we need to resort to approximate solutions found through linear regression
+- We may be able to determine inverse, such that solution of $\mathbf{Ax}=\mathbf{b}$ is given as $\mathbf{x}=\mathbf{A}^{-1}\mathbf{b}$ if matrix is invertible
+- If matrix have linearly independant columns, we can use transformation $\mathbf{Ax}=\mathbf{b} \Leftrightarrow \mathbf{A}^\top\mathbf{Ax}=\mathbf{A}^\top\mathbf{b} \Leftrightarrow \mathbf{x}=(\mathbf{A}^\top\mathbf{A})^{-1}\mathbf{A}^\top\mathbf{b}$
