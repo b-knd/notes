@@ -399,3 +399,10 @@ $$\lbrack \mathbf{A} | \mathbf{I}_n\rbrack \rightsquigarrow \cdots \rightsquigar
    3. Neutral element: $exits e\in \mathcal{G}\forall x \in \mathcal{G}: x \otimes e = x$ and $e \otimes x = x$
    4. Inverse element: $\forall x\in \mathcal{G}\exists y \in \mathcal{G}: x\otimes y = e$ and $y\otimes x = e$. We often write $x^{-1}$ to denote the inverse element of x. (Inverse is defined with respect to the operation $\otimes$ and does not necessarily mean $\frac{1}{x}$.
 >> If additionally $\forall x, y\in \mathcal{G}: x\otimes y = y\otimes x$, then $G = (\mathcal{G}, \otimes)$ is an Abelian group (commutative).
+
+**Examples**
+- $(\mathbb{Z}, +)$ is a group.
+-- Has closure, is assoiciative, has neutral element (of 0) and each element has an inverse element
+
+> **Definition** (General Linear Group). The set of regular (invertible) matrices $\mathbf{A}\in\mathbb{R}^{n\times n}$ is a group with respect to matrix multiplication ($\mathbb{R}^{n\times n}, \cdot$) and is called general linear group $GL(,\mathbb{R}).$ However, since matrix multiplication is not commutative, the group is not Abelian.
+>> _Remark_. Closure and associativity follow directly from the definition of matrix multiplication, neutral element is the identity matrix, inverse element exists for all invertible matrices.
