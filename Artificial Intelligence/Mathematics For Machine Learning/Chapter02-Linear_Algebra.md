@@ -390,3 +390,12 @@ $$\lbrack \mathbf{A} | \mathbf{I}_n\rbrack \rightsquigarrow \cdots \rightsquigar
 - If there is no solution to a system of linear equations, we need to resort to approximate solutions found through linear regression
 - We may be able to determine inverse, such that solution of $\mathbf{Ax}=\mathbf{b}$ is given as $\mathbf{x}=\mathbf{A}^{-1}\mathbf{b}$ if matrix is invertible
 - If matrix have linearly independant columns, we can use transformation $\mathbf{Ax}=\mathbf{b} \Leftrightarrow \mathbf{A}^\top\mathbf{Ax}=\mathbf{A}^\top\mathbf{b} \Leftrightarrow \mathbf{x}=(\mathbf{A}^\top\mathbf{A})^{-1}\mathbf{A}^\top\mathbf{b}$
+
+## Chapter 2.4 Vector Spaces
+### Chapter 2.4.1 Groups
+> **Definition** (Group). Consider a set $\mathcal{G}$ and an operation $\otimes: \mathcal{G} times \mathcal{G} \rightarrow \mathcal{G}$ defined on $\mathcal{G}$. Then $G\coloneqq (\mathcal{G}, \otimes) $ is called a group if the following hold:
+>> 1. Closure of $\mathcal{G}$ under $\otimes: \forall x, y\in \mathcal{G}: x\otimes y \in \mathcal{G}$
+   2. Associativity: $\forall x, y, z \in \mathcal{G}: (x\otimes y)\otimes z = x\otimes (y\otimes z)$
+   3. Neutral element: $exits e\in \mathcal{G}\forall x \in \mathcal{G}: x \otimes e = x$ and $e \otimes x = x$
+   4. Inverse element: $\forall x\in \mathcal{G}\exists y \in \mathcal{G}: x\otimes y = e$ and $y\otimes x = e$. We often write $x^{-1}$ to denote the inverse element of x. (Inverse is defined with respect to the operation $\otimes$ and does not necessarily mean $\frac{1}{x}$.
+>> If additionally $\forall x, y\in \mathcal{G}: x\otimes y = y\otimes x$, then $G = (\mathcal{G}, \otimes)$ is an Abelian group (commutative).
