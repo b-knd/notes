@@ -414,12 +414,7 @@ $$\lbrack \mathbf{A} | \mathbf{I}_n\rbrack \rightsquigarrow \cdots \rightsquigar
 >> 3. Associativity (outer operation): $\forall \lambda, \phi\in\mathbb{R}, \mathbf{x}\in\mathcal{V}:\lambda\cdot (\phi\cdot\mathbf{x}) = (\lambda\phi ) \cdot\mathbf{x}$
 >> 4. Neutral element with respect to outer operation: $\forall \mathbf{x}\in\mathcal{V} : 1 \cdot \mathbf{x}=\mathbf{x}$
 
-**Some important examples of vector space**
+**Example of vector space**
 - $\mathcal{V}\mathbb{R}^n, n\in\mathbb{N}$ is vector space with operation:
 -- Addition: $\mathbf{x}+\mathbf{y} = (x_1,...,x_n)+(y_1,...,y_n)=(x_1+y_1,...x_n+y_n)$ for all $\mathbf{x},\mathbf{y}\in\mathbb{R}^n$
-- $\mathcal{V} = \mathbb{R}^{m\times n}, m, n \in \mathbb{N}$ is a vector space with 
--- Addition: $\mathbf{A}+\mathbf{B} = \begin{bsmallmatrix}3 \\
--1 \\
-0 \\
-0 \\
-0\end{bsmallmatrix}$
+
