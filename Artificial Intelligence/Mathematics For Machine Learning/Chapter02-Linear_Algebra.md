@@ -406,3 +406,20 @@ $$\lbrack \mathbf{A} | \mathbf{I}_n\rbrack \rightsquigarrow \cdots \rightsquigar
 
 > **Definition** (General Linear Group). The set of regular (invertible) matrices $\mathbf{A}\in\mathbb{R}^{n\times n}$ is a group with respect to matrix multiplication ($\mathbb{R}^{n\times n}, \cdot$) and is called general linear group $GL(,\mathbb{R}).$ However, since matrix multiplication is not commutative, the group is not Abelian.
 >> _Remark_. Closure and associativity follow directly from the definition of matrix multiplication, neutral element is the identity matrix, inverse element exists for all invertible matrices.
+
+### Chatper 2.4.2 Vector Spaces
+> **Definition** (Vector Space). A real-valued vector space $V=(\mathcal{V},+,\cdot )$ is a set $\mathcal{V}$ with two operation: $+:\mathcal{V}\times \mathcal{V} \rightarrow\mathcal{V}$ and $\cdot :\mathbb{R}\times \mathcal{V}\rightarrow \mathcal{V}$ where
+>> 1. $(\mathcal{V},+)$ is an Abelian group
+>> 2. Distributivity: $\forall \lambda \in \mathbb{R}, \mathbf{x},\mathbf{y}\in \mathcal{V}: \lambda \cdot (\mathbf{x}+\mathbf{y}) = \lambda \cdot \mathbf{x} + \lambda \cdot \mathbf{y}$
+>> 3. Associativity (outer operation): $\forall \lambda, \phi\in\mathbb{R}, \mathbf{x}\in\mathcal{V}:\lambda\cdot (\phi\cdot\mathbf{x}) = (\lambda\phi ) \cdot\mathbf{x}$
+>> 4. Neutral element with respect to outer operation: $\forall \mathbf{x}\in\mathcal{V} : 1 \cdot \mathbf{x}=\mathbf{x}$
+
+**Some important examples of vector space**
+- $\mathcal{V}\mathbb{R}^n, n\in\mathbb{N}$ is vector space with operation:
+-- Addition: $\mathbf{x}+\mathbf{y} = (x_1,...,x_n)+(y_1,...,y_n)=(x_1+y_1,...x_n+y_n)$ for all $\mathbf{x},\mathbf{y}\in\mathbb{R}^n$
+- $\mathcal{V} = \mathbb{R}^{m\times n}, m, n \in \mathbb{N}$ is a vector space with 
+-- Addition: $\mathbf{A}+\mathbf{B} = \begin{bsmallmatrix}3 \\
+-1 \\
+0 \\
+0 \\
+0\end{bsmallmatrix}$
