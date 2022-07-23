@@ -415,6 +415,20 @@ $$\lbrack \mathbf{A} | \mathbf{I}_n\rbrack \rightsquigarrow \cdots \rightsquigar
 >> 4. Neutral element with respect to outer operation: $\forall \mathbf{x}\in\mathcal{V} : 1 \cdot \mathbf{x}=\mathbf{x}$
 
 **Example of vector space**
-- $\mathcal{V}\mathbb{R}^n, n\in\mathbb{N}$ is vector space with operation:
+- $\mathcal{V}=\mathbb{R}^n, n\in\mathbb{N}$ is vector space with operation:
 -- Addition: $\mathbf{x}+\mathbf{y} = (x_1,...,x_n)+(y_1,...,y_n)=(x_1+y_1,...x_n+y_n)$ for all $\mathbf{x},\mathbf{y}\in\mathbb{R}^n$
 
+### Chapter 2.4.3 Vector Subspaces
+> **Definition** (Vector Subspace). Let $V = (\mathcal{V}, +, \cdot )$ be a vector space and $\mathcal{U} \subseteq \mathcal{V}, \mathcal{U} \neq \emptyset$. Then $U = (\mathcal{U}, +, \cdot )$ is called vector subspace of V if U is a vector space with the vector space operation + and $\cdot$ restricted to $\mathcal{U} \times \mathcal{U}$ and $\mathbb{R}\times\mathcal{U}$. We write $U \subseteq V$ to denote a subspace $U$ of $V$.
+
+To show a vector U is a subspace of V:
+1. $\mathcal{U} \neq \emptyset$, in particular $\mathbf{0} \in \mathcal{U}$
+2. Closure of U:
+
+    a. With respect to the outer operation: $\forall\lambda\in\mathbb{R}\forall\mathbf{x}\in\mathcal{U}: \lambda\mathbf{x}\in\mathcal{U}$
+    
+    b. With respect to inner operation: $\forall\mathbf{x,y}\in\mathcal{U}: \mathbf{x}+\mathbf{u}\in\mathcal{U}$
+    
+> _Remark_. For every vector space V, the trivial substapces are V itself and {0}
+
+## Chapter 2.5 Linear Independence
