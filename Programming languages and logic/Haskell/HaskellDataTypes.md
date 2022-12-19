@@ -1,7 +1,8 @@
 [List](#list)
 
 ## List
-### Functions
+Not a rule but by convention list arguments are usually named with a suffix s (eg. xs, ys)
+### Built-in functions
 ```shell
 # Selecting first element of list:
 > head [1,2,3,4,5]
