@@ -30,7 +30,7 @@
 
 **1960s**: Peter Landin introduced ISWIM (rethinks LISP, remove variables and introduced where clause)
 
-**1970s**: John Backus introduced FP treats functions as first-class entities, promotes higher-order functions
+**1970s**: John Backus introduced FP that treats functions as first-class entities and promotes higher-order functions
 
 Robin Milner on type inference and polymorphic types in ML (first modern functional programming language)
      
