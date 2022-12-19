@@ -1,2 +1,2 @@
 # Programming Languages 
-- [**Haskell (.hs)**](/Haskell)
+- [**Haskell (.hs)**](/Programming%20languages%20and%20logic/Haskell)
