@@ -37,7 +37,9 @@ DFA M = (Q, Σ, δ, s, F)
 
 <img src="./Media/IMG_6BCC0730A23D-1.jpeg" width="600">
 
-Deterministic acceptance
+- Deterministic acceptance: DFA will accepts string s if we are able to reach any final states from starting state after finish processing s
+- For a DFA M, its language L(M) is the set of all strings accepted by M
+
 
 
 **Non-Determinitic Finite Automaton with ε-moves (εNFA)**
@@ -60,8 +62,8 @@ Deterministic acceptance
 - All s satisfies property εs = εs = s
 - String containing n copies of a is denoted as a^n, recursive definition: </br>
   a^0 = ε, a^(n+1) = (a^n)a
-
-### Regular Languages
+ 
+**Languages**
 > A language L over Σ is some set of strings in Σ* </br>
 > Two languages are equal if they contain the same strings (equal as sets) 
 
@@ -70,3 +72,6 @@ Given Σ = {a, b, c}, some examples of languages over Σ are
 - L2 = { a^n | n ∈ N is even }
 - L3 = { (a^n)(b^n) | n ∈ N }
 - L4 = { (a^n)(b^n)(c^n) | n ∈ N }
+
+### Regular Languages
+> A language is recognised as regular if it is L(M) for some DFA M
