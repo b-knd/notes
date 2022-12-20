@@ -21,7 +21,20 @@
 
 ## Finite State Automata, Regular Expressions and Regular Languages
 ### Finite State Automata
-> Finite automata are machines which accept or reject string
+> Finite automata are machines with finite number of states that either accept or reject string
+
+**state:** description of system at a point in time
+
+**Deterministic Finite Automaton (DFA)**
+
+**Non-Deterministic Finite Automaton (NDFA)**
+DFA M = (Q, Σ, δ, s, F)
+- Q: set of states
+- Σ: alphabet
+- δ: transition function (δ(q,a) = q' means transiting from q to q' upon meeting a)
+- s ∈ Q: start state
+- F ⊆ Q: set of final states
+**Non-Determinitic Finite Automaton with ε-moves (εNFA)**
 
 
 ### Regular Expressions
@@ -43,3 +56,11 @@
   a^0 = ε, a^(n+1) = (a^n)a
 
 ### Regular Languages
+> A language L over Σ is some set of strings in Σ* </br>
+> Two languages are equal if they contain the same strings (equal as sets) 
+
+Given Σ = {a, b, c}, some examples of languages over Σ are
+- L1 = { a^n | n ∈ N }
+- L2 = { a^n | n ∈ N is even }
+- L3 = { (a^n)(b^n) | n ∈ N }
+- L4 = { (a^n)(b^n)(c^n) | n ∈ N }
