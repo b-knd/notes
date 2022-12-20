@@ -35,7 +35,10 @@ DFA M = (Q, Σ, δ, s, F)
 - s ∈ Q: start state
 - F ⊆ Q: set of final states
 
-<img src=https://github.com/b-knd/notes/blob/main/Theory%20of%20computation/Media/IMG_6BCC0730A23D-1.jpeg), width=800>
+<img src="./Media/IMG_6BCC0730A23D-1.jpeg" width="600">
+
+Deterministic acceptance
+
 
 **Non-Determinitic Finite Automaton with ε-moves (εNFA)**
 
