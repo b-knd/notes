@@ -6,6 +6,7 @@
 - [Basic Syntax](./HaskellBasicSyntax.md)
 - [Data Types and Structures](./HaskellDataTypes.md)
 - [Functional Programming](./HaskellFunctionalProgramming.md)
+- [Algorithms](./HaskellAlgorithm)
 
 **Extra resources**
 - [Documentation](https://www.haskell.org/documentation/)
