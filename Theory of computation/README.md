@@ -26,21 +26,38 @@
 **state:** description of system at a point in time
 
 **Deterministic Finite Automaton (DFA)**
+> The next state is uniquely determined by current state and input (deterministic)
 
-**Non-Deterministic Finite Automaton (NDFA)**
-DFA M = (Q, Σ, δ, s, F)
+DFA M = (Q, Σ, Δ, s, F)
 - Q: set of states
 - Σ: alphabet
 - δ: transition function (δ(q,a) = q' means transiting from q to q' upon meeting a)
 - s ∈ Q: start state
 - F ⊆ Q: set of final states
 
-<img src="./Media/IMG_6BCC0730A23D-1.jpeg" width="600">
+  <img src="./Media/IMG_6BCC0730A23D-1.jpeg" width="600">
 
 - Deterministic acceptance: DFA will accepts string s if we are able to reach any final states from starting state after finish processing s
 - For a DFA M, its language L(M) is the set of all strings accepted by M
 
+**Non-Deterministic Finite Automaton (NDFA)**
+> Given current state and input, there can be any number of next states
 
+NFA M = (Q, Σ, δ, s, F)
+- Q: set of states
+- Σ: alphabet
+- Δ: transition function (q' ∈ Δ(q,a) means there is a transition available from q to q' upon meeting a, there could be more than one transition available for single state and input)
+- s ∈ Q: start state
+- F ⊆ Q: set of final states
+
+  <img src="./Media/IMG_4A9FC12F8D4F-1.jpeg" width="600">
+
+- Nondeterministic acceptance: NFA accepts string s if there is a path from starting state to any states after processing s (there may be more than one possible paths for a single string, reject only if all paths do not end in final state, accept if there exsit at least one)
+- NFAs are at least as powerful as DFAs as they accept at least the languages accepted by DFAs)
+  - Any NFAs can also be converted to DFA using subset construction 
+  - Example of conversion:
+  
+    <img src="./Media/IMG_94928A71655B-1.jpeg" width="600">
 
 **Non-Determinitic Finite Automaton with ε-moves (εNFA)**
 
