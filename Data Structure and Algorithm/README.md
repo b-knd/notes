@@ -6,12 +6,13 @@
   - Array
 
 - Dynamic (size not fixed, support update of data)
-  - Array List
   - Linked List
+  - Stack
+  - Queue
 
 **Non-Linear Data Structure**
 > Data structure which the data elements are not placed sequentially or linearly thus cannot be traversed in single run
-
+- Tree
 - [Graph](#graph)
 
   - [Breadth First Search/Traversal](#breadth-first-searchtraversal-bfs)
