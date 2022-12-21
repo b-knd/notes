@@ -30,7 +30,7 @@ A data structure consisting of vertices (nodes) and edges (lines/arcs) connectin
 ```
 
 ### Breadth First Search/Traversal (BFS)
-Similar to tree but graphs may contains cycles. To avoid visiting same node more than once, we keep extra information of visited nodes.
+Similar to tree but graphs may contain cycles. To avoid visiting same node more than once, we keep extra information of visited nodes.
 
 **Implementation**
 - Declare queue and insert starting vertex
@@ -46,3 +46,18 @@ Similar to tree but graphs may contains cycles. To avoid visiting same node more
 
 **Related questions on LeetCode**
 1. [Q841 Keys and Rooms](./Graph/BreadthFirstSearch/Q841KeysAndRooms.md)
+
+### Depth First Search/Traversal (DFS)
+Similar to tree but graphs may contain cycles. To avoid visiting same node more than once, we keep extra information of visited nodes.
+
+**Implementation**
+- Create a recursive function that takes the index of the node and a visited array
+- Mark current node as visited node
+- Traverse all adjacent and unmarked nodes and call recursive function with index of adjacent nodes
+
+**Complexity**
+- Time complexity: O(V+E)
+- Space complexity: O(d) where d is the maximum depth of the path
+
+**Related questions on LeetCode**
+1. [Q886 Possible Bipartition](./Graph/DepthFirstSearch/Q886PossibleBipartition.md)
