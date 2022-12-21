@@ -16,6 +16,7 @@
 - [Graph](#graph)
 
   - [Breadth First Search/Traversal](#breadth-first-searchtraversal-bfs)
+  - [Depth First Search/Traversal](#depth-first-searchtraversal-dfs)
 
 ## Graph
 A data structure consisting of vertices (nodes) and edges (lines/arcs) connecting two nodes in the graph. 
