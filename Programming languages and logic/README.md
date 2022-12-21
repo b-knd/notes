@@ -20,7 +20,7 @@
 
     > _Treates program as group of objects composed by data and program elements known as attributes and methods. Objects can be reused within program or other programs_
     > 
-    > ex: [Java], Python, PHP, C++, Ruby
+    > ex: [Java](/Programming%20languages%20and%20logic/Java), Python, PHP, C++, Ruby
 4. **Scripted languages**
 
 5. **Logic programming languages**
