@@ -10,6 +10,7 @@
 
 ## Introduction to AI
 > **Artificial Intelligence (AI):** science and engineering of making intelligent machines, especially intelligent computer programs.
+>
 > **Intelligence**: ability to acquire, understand and apply knowledge to achieve goals in the world
 
 ### Knowledge-Based AI vs Learning-Based AI**
