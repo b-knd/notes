@@ -39,9 +39,9 @@
 - To understand how human think, some of the approaches are introspection, pshychological experiments and brain imaging
 - Application of cognitive science to construct precise and testable theories of human mind
 
-**Thinking Rationally: The "law of thought" process
+**Thinking Rationally: The "law of thought" process**
 - Logic: to yield a correct conclusions given a correct premises
 
-**Acting Rationally: Rational agent approach
+**Acting Rationally: Rational agent approach**
 - Rational agent to act in order to achieve the best (expected) outcomes
 - Skills needed in turing test are also applicable here
