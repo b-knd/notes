@@ -1,11 +1,13 @@
 # Algorithms | Codes and Solutions
 _**LC:** LeetCode_
-**List**
+
+**[List](#list)**
+
 **Graph**
-- [Breadth-first search/traversal (BFS)](#BFS)
+- [Breadth-first search/traversal (BFS)](#bfs)
 
 
-##List
+## List
 1. [LC1: Two Sum](./List/LC1TwoSum.hs)
 
 ## Graph
