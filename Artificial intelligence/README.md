@@ -13,7 +13,7 @@
 >
 > **Intelligence**: ability to acquire, understand and apply knowledge to achieve goals in the world
 
-### Knowledge-Based AI vs Learning-Based AI**
+### Knowledge-Based AI vs Learning-Based AI
 **Knowledge-Based AI**
 - Uses deductive reasoning
 - From a general statement, examine available possiblities to reach a conclusion
