@@ -72,6 +72,12 @@ NFA M = (Q, Σ, δ, s, F)
   <img src="./Media/IMG_9179DC098509-1.jpeg" width="600">
 
 - ε-Nondeterministic acceptance: similar to NFA, accept string s if there is at least one path from starting state to any final states after finish consuming s
+- NFA is a special kind of εNFA, one that does not have ε transitions
+- Any εNFA can be converted to an NFA so NFA is at least as powerful as NFA
+- Example of conversion: 
+
+    <img src="./Media/IMG_E0AAD50E8EBA-1.jpeg" width="600">
+    <img src="./Media/IMG_40C6EB952C12-1.jpeg" width="600">
 
 ### Regular Expressions
 - **alphabet Σ:** any finite set of symbols ``(eg. {0,1}, {a,b,c}``
