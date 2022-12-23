@@ -2,7 +2,7 @@
 - **Automata theory**
   - [Finite state automata, regular expressions and regular languages](#finite-state-automata-regular-expressions-and-regular-languages)
   - The pumping lemma for regular languages
-  - Closure properties of regular languages
+  - [Closure properties of regular languages](#closure-properties-of-regular-languages)
   - Context-free grammars and pushdown automata
   - Closure properties of context-free languages
   - The pumping lemma for context-free languages
@@ -109,3 +109,11 @@ Given Σ = {a, b, c}, some examples of languages over Σ are
 
 ### Regular Languages
 > A language is recognised as regular if it is L(M) for some DFA M
+
+## Closure Properties of Regular Languages
+> Regular languages is closed under
+> - union
+> - intersection
+> - complement
+> - concatenation 
+> - kleene star
