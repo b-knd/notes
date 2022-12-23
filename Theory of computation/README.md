@@ -60,7 +60,18 @@ NFA M = (Q, Σ, δ, s, F)
     <img src="./Media/IMG_94928A71655B-1.jpeg" width="600">
 
 **Non-Determinitic Finite Automaton with ε-moves (εNFA)**
+> Given current state, there is a possible move of epsilon such that the transition will not consume any symbol in string
 
+εNFA M = (Q, Σ, Θ, s, F)
+- Q: set of states
+- Σ: alphabet
+- Θ: transition function (q' ∈ Θ(q,a) means there is a transition available from q to q' upon meeting a, there could be more than one transition available for single state and input), $Θ: Q \times (Σ + \lbrace ε\rbrace) \rightarrow 2^Q$
+- s ∈ Q: start state
+- F ⊆ Q: set of final states
+
+  <img src="./Media/IMG_9179DC098509-1.jpeg" width="600">
+
+- ε-Nondeterministic acceptance: similar to NFA, accept string s if there is at least one path from starting state to any final states after finish consuming s
 
 ### Regular Expressions
 - **alphabet Σ:** any finite set of symbols ``(eg. {0,1}, {a,b,c}``
