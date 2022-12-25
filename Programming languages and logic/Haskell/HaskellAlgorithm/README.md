@@ -3,7 +3,7 @@ _**LC:** LeetCode_
 
 **[List](#list)**
 
-**Graph**
+**[Graph](#graph)**
 - [Breadth-first search/traversal (BFS)](#bfs)
 
 
