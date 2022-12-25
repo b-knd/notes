@@ -9,6 +9,7 @@ _**LC:** LeetCode_
 
 ## List
 1. [LC1: Two Sum](./List/LC1TwoSum.hs)
+2. [LC2389: Longest Subsequence With Limited Sum](./List/LC2389LongestSubsequence.hs)
 
 ## Graph
 ### BFS
